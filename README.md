@@ -3,6 +3,8 @@ A tool in bash that will make rooting devices faster.
 
 WARNING! Please check if your device requires a code to unlock the bootloader, otherwise errors can occur.
 
+Use qrkey to gain the key and please double check it. DO NOT USE qrunlock's UNLOCK FEATURE TO UNLOCK IF A KEY IS REQUIRED!!
+
 Install guide:
 # Via curl
 Open up your terminal and run this command:
