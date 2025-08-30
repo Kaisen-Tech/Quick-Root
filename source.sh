@@ -1,8 +1,7 @@
 #!/bin/bash
 
-# Detect if script is being run via curl/wget pipe
-# Detect if script is being run via curl/wget pipe or process substitution
-if [[ "${BASH_SOURCE[0]}" == /dev/fd/* ]] || [[ ! -t 0 ]]; then
+# Detect if the script is run from a pipe or process substitution
+if [[ -p /dev/stdin ]] || [[ "${BASH_SOURCE[0]}" == /dev/fd/* ]]; then
     echo "NOTICE: Script appears to be run via curl/wget pipe or process substitution."
     echo "These commands may persist after reopening the terminal,"
     echo "but it is recommended to put this installer inside your ~/.bashrc file."
