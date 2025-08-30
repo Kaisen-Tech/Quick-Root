@@ -7,7 +7,7 @@ Install guide:
 
 Open up your terminal and run this command:
 ```bash
-curl -s https://raw.githubusercontent.com/Kaisen-Tech/Quick-Root/refs/heads/main/source.sh >> ~/.bashrc && source ~/.bashrc
+source <(curl -s https://raw.githubusercontent.com/Kaisen-Tech/Quick-Root/refs/heads/main/source.sh)
 ```
 
 If you are on chromebook, you may be asked to confirm if you want to install.
